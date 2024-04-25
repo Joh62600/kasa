@@ -1,0 +1,15 @@
+#Dispo{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:45px ;
+    padding-left:  100px; 
+    padding-right: 100px;
+    margin: 0 auto;
+}
+#NavBar{
+    display: flex;
+    gap: 57px;
+    
+}

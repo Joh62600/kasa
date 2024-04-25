@@ -1,0 +1,16 @@
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #F6F6F6;
+    width: 1240px;
+    gap: 50px;
+    border-radius: 25px;
+    margin: 0px 0px 100px 100px;
+  }
+  
+  .card {
+
+    flex-basis: calc(33.333% - 20px); 
+  }
