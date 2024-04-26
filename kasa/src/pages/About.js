@@ -1,9 +1,19 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import Banner from "../components/banner/banner";
+
 
 
 function About() {
-    return <h2>À Propos</h2>;
+  
+    return(
+     <div>
+      <Banner image="ImageBanner2.png" dark= {false}/>
+     </div>
+
+
+
+
+    )
   }
   
   export default About;
