@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Card from '../card/Card';
 import './CardList.css';
 
@@ -15,7 +16,9 @@ const CardList = () => {
   return (
     <div className="card-list">
       {cardData.map(card => (
-        <Card key={card.id} title={card.title} />
+        <NavLink key={card.id} to="/FicheLogement">
+        <Card title={card.title} />
+      </NavLink>
       ))}
     </div>
   );

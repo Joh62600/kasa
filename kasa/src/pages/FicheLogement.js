@@ -4,7 +4,12 @@ import { Link } from 'react-router-dom';
 
 
 function FicheLogement() {
-    return <h2>Fiche Logement</h2>;
+    return (
+      <div>
+        
+      </div>
+
+    )
   }
   
   export default FicheLogement;

@@ -1,0 +1,43 @@
+.collapse-container {
+    margin: 10px 0 10px 0px;
+    width: 100%;
+    padding: 0px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.collapse-header {
+    padding: 10px ;
+    text-align: left;
+    background-color: #FF6060;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-family: Montserrat;
+    font-size: 24px;
+    width: 60%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collapse-content {
+    padding: 10px;
+    background-color:#F6F6F6 ;
+    width: 58%;
+    border-radius: 10px;
+}
+.chevron-container {
+    transition: transform 0.5s ease; 
+}
+.arrow {
+    transform-origin: center;
+    transition: transform 0.5s ease;
+}
+.arrow.rotate {
+    transform: rotateZ(-180deg) scaleX(-1); 
+}

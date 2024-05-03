@@ -13,7 +13,7 @@
 }
 #logoFooterSize{
     width: 122px;
-    height: 40px;
+    height: auto;
 }
 @media (max-width:768px)  {
     
