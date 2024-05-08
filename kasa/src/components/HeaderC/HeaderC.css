@@ -1,24 +1,36 @@
-#Dispo{
-    flex-direction: row;
+#Dispo {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top:45px ;
-    padding-left:  100px; 
-    padding-right: 100px;
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    padding-top: 20px; 
     margin: 0 auto;
+    width: 100%; 
+    gap: 63%;
 }
-#logo{
-    max-width: 100%;
-    height: auto;
+
+#logo {
+    width: auto; 
+    max-height: 68px; 
 }
-#NavBar{
+
+#NavBar {
     display: flex;
-    gap: 57px;
-    margin: 0;
-    padding: 0;
-  
+    gap: 20px; 
+    list-style: none; 
 }
-@media (max-width:768px)  {
-    
+
+@media (max-width: 768px) {
+    #Dispo {
+        flex-direction: row; 
+    }
+
+    #logo {
+        max-width: 60%; 
+        max-height: 46px;
+    }
+
+    #NavBar {
+        flex-direction: row; 
+    }
 }

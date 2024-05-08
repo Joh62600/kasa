@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/FicheLogement" element= {<FicheLogement/>}/>
+          <Route path="/FicheLogement/:id" element= {<FicheLogement/>}/>
           <Route path="*" element= {<NotFound/>}/>  
         </Routes>
         <FooterC/>
