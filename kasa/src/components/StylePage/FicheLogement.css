@@ -1,0 +1,33 @@
+.Container {
+    
+}
+.collapses{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+    gap: 76px;
+}
+
+.info_description{
+    align-items: flex-start;
+    color: #ff6060;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+   
+}
+.info_content{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 10px;
+}
+.info_notation{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

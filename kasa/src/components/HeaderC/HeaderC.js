@@ -9,12 +9,13 @@ function HeaderC() {
   <header id='Dispo'>
   
       <img id='logo' src='./logo.png'></img>
-      <div id='NavBar'>
-      <NavLink to='/'>Accueil</NavLink>
-      <NavLink to='/About'>A propos</NavLink>
+      <nav id='NavBar'>
+        <ul>
+      <li><NavLink to='/'>Accueil</NavLink></li>
+      <li><NavLink to='/About'>A propos</NavLink></li>
+      </ul>
       
-      
-      </div>
+      </nav>
     </header>
     
   )

@@ -11,7 +11,7 @@ import FooterC from './components/FooterC/FooterC';
 function App() {
   return (
     <Router>
-      <div>
+      <div className="app">
         <HeaderC/>
         
         <Routes>

@@ -3,6 +3,7 @@ import Banner from "../components/banner/banner";
 import Collapse from "../components/Collapse/Collapse";
 
 
+
 function About() {
   
     return(
