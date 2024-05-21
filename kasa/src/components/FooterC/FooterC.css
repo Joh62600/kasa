@@ -2,7 +2,8 @@
     background-color: black;
     color: white;
     height: 209px;
-    margin:0 -200px;
+     margin-left: -120px;
+    margin-right: -120px;
 }
 #ensembleDispo{
     padding-top: 66px;
@@ -16,5 +17,9 @@
     height: auto;
 }
 @media (max-width:768px)  {
-    
+#dispo{
+    margin-bottom: -10px;
+    margin-left: -25px;
+    margin-right: -25px;
+}
 }

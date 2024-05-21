@@ -32,5 +32,25 @@
     transform: translateY(-50%); /* Ajuster pour centrer verticalement */
 }
 @media (max-width:768px)  {
-   
+    .OverlayImg{
+        font-size: 35px;
+        top: 50%;
+    }
+}
+@media (max-width:500px)  {
+   #BannerDispo{
+    margin: 0;
+   }
+
+    .ImgBanner{
+    border-radius: 10px;
+    height: 111px;
+    margin-bottom: 15px;
+    margin-top: 18px;
+    width: 100%;
+}  
+
+.OverlayImg{
+    font-size: 25px;
+}
 }

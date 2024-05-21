@@ -14,5 +14,12 @@
     font-size: 18x;
     font-weight: 500;
     margin-top: 0;
+    color: black;
 }
-  
+@media (max-width: 768px) {
+
+  .apart-location{
+    padding: 0;
+    margin: 0;
+  }
+}

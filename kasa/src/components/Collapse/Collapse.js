@@ -1,14 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
-import './Collapse.css'; 
+import './Collapse.css';
 
 const Collapse = ({ title, children }) => {
     const [isOpen, setIsOpen] = useState(false);
+    const contentRef = useRef(null);
 
     const toggleCollapse = () => {
         setIsOpen(!isOpen);
     };
+
+    useEffect(() => {
+        if (isOpen) {
+            contentRef.current.style.height = `${contentRef.current.scrollHeight}px`;
+        } else {
+            contentRef.current.style.height = '0px';
+        }
+    }, [isOpen]);
 
     return (
         <div className="collapse-container">
@@ -18,11 +27,17 @@ const Collapse = ({ title, children }) => {
                     <FontAwesomeIcon icon={faChevronUp} className={`arrow ${isOpen ? 'rotate' : ''}`} />
                 </span>
             </button>
-            {isOpen && (
-                <div className="collapse-content">
-                    {children}
-                </div>
-            )}
+            <div
+                ref={contentRef}
+                className={`collapse-content`}
+                onTransitionEnd={() => {
+                    if (isOpen) {
+                        contentRef.current.style.height = 'auto';
+                    }
+                }}
+            >
+                {children}
+            </div>
         </div>
     );
 };

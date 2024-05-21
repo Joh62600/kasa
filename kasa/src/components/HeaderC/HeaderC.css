@@ -14,12 +14,12 @@
 
 #NavBar {
     display: flex;
-    align-items: center; /* Centrer les items verticalement */
+    align-items: center; 
 }
 
 #NavBar ul {
     display: flex;
-    flex-direction: row; /* Assurer que la liste est en ligne */
+    flex-direction: row; 
     padding: 0;
     margin: 0;
     list-style: none;
@@ -36,25 +36,49 @@
 }
 
 #NavBar a.active {
-    text-decoration: underline; /* Souligne le lien actif */
+    text-decoration: underline; 
 }
 
 @media (max-width: 768px) {
     #Dispo {
-        flex-direction: column; 
-        gap: 20px; /* Ajuster l'espace entre les éléments pour les petits écrans */
+        flex-direction: row; 
+        align-items: center;
+        padding-top: 10px;
     }
 
     #logo {
-        max-width: 60%; 
-        max-height: 46px;
+        height: 47px;
+        width: 145px;
+    }
+    
+
+    #NavBar {
+        display: flex;
+        align-items: center;
+        
+        
     }
 
     #NavBar ul {
-        flex-direction: column; /* Assurer que la liste est en colonne pour les petits écrans */
+        flex-direction: row;
+        margin-left: -42px;
+       
     }
 
     #NavBar li {
-        margin: 10px 0;
+        margin: 0px 0;
     }
+
+    #NavBar a {
+        font-size: 16px; 
+    }
+}
+@media (max-width: 400px) {
+
+
+
+    #NavBar a {
+        font-size: 12px; 
+    }
+
 }

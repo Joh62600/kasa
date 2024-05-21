@@ -16,5 +16,9 @@
     flex-basis: calc(33.333% - 20px); 
   }
   @media (max-width:768px)  {
-    
+    .card-list{
+    padding-top: 0px; 
+    margin-top: 0px;
+    background-color: white ;
+  }
   }
