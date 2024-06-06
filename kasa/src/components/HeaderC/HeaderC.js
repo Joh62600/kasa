@@ -7,8 +7,9 @@ function HeaderC() {
   return(
       
   <header id='Dispo'>
-  
+  <NavLink to='/'>
       <img id='logo' src='./logo.png'></img>
+      </NavLink>
       <nav id='NavBar'>
         <ul>
       <li><NavLink to='/'>Accueil</NavLink></li>
