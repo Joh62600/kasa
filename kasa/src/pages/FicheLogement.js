@@ -1,5 +1,5 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import logements from "../data/logement.json";
 import Carousel from "../components/Carousel/Carousel";
 import ApartInfo from "../components/ApartInfo/ApartInfo";
@@ -11,10 +11,19 @@ import "../components/StylePage/FicheLogement.css";
 
 function FicheLogement() {
   const { id } = useParams();
+  const navigate = useNavigate();
+
   const property = logements.find((logement) => logement.id === id);
 
+  useEffect(() => {
+    if (!property){
+      navigate('/NotFound');
+    }
+  }, [property, navigate]);
+  
+
   if (!property) {
-    return <div>Logement non trouvé</div>;
+    return null;
   }
 
   return (
