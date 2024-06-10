@@ -59,3 +59,14 @@
         width: 100%;
     }
 }
+@media  (max-width: 480px){
+
+.card-image{
+    height: 220px;
+    width: 87%;
+}
+.card-title {
+    font-size: 0.7em;
+}
+
+}

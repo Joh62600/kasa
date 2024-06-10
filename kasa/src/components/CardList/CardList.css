@@ -4,11 +4,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 35px;
   margin-top: 35px;
   padding-bottom: 35px;
   padding-top: 35px;
+  padding-left: 4%;
   }
   
   .card {
@@ -20,5 +21,6 @@
     padding-top: 0px; 
     margin-top: 0px;
     background-color: white ;
+    padding-left: 0px;
   }
   }
