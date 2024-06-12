@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Card from '../card/Card';
+import Card from '../Card/Card';
 import './CardList.css';
 import logements from '../../data/logement.json';
 

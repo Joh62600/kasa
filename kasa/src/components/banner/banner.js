@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import './banner.css'
+import './Banner.css'
 
 function Banner({image, overlayText, dark }) {
     return (
