@@ -3,12 +3,13 @@ import {  NavLink} from 'react-router-dom';
 import './HeaderC.css'
 
 
+
 function HeaderC() {
   return(
       
   <header id='Dispo'>
   <NavLink to='/'>
-      <img id='logo' src='./logo.png'></img>
+      <img id='logo' src='./logo.png' alt='logoHeader'></img>
       </NavLink>
       <nav id='NavBar'>
         <ul>

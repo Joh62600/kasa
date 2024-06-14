@@ -24,9 +24,10 @@
 @media (max-width: 768px) {
 
   .tag{
-    margin-top: 0;
+    margin-top: 10;
     margin-bottom: 0;
     font-size: 0.7rem;
+  
   }
 
 
