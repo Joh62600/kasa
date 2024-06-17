@@ -4,13 +4,15 @@ import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import './Collapse.css';
 
 const Collapse = ({ title, children }) => {
-    const [isOpen, setIsOpen] = useState(false);
-    const contentRef = useRef(null);
+    const [isOpen, setIsOpen] = useState(false); // Gère l'état d'ouverture/fermeture
+    const contentRef = useRef(null); // Référence au conteneur du contenu
 
+    // Fonction pour basculer l'état de la section
     const toggleCollapse = () => {
         setIsOpen(!isOpen);
     };
 
+    // Effet pour ajuster la hauteur du conteneur en fonction de l'état
     useEffect(() => {
         if (isOpen) {
             contentRef.current.style.height = `${contentRef.current.scrollHeight}px`;
